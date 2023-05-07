@@ -4,7 +4,7 @@ import DashboardTable from './components/DashboardTable';
 
 function App() {
   return (
-   
+      
       <DashboardTable />
     
   );
