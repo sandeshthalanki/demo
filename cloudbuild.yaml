@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/test-project-09061993/agendaunica-gcbuild', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/test-project-09061993/agendaunica-gcbuild']
+images:
+  - 'gcr.io/test-project-09061993/agendaunica-gcbuild'
+
+#gcloud builds submit --project test-project-09061993  --config cloudbuild.yaml .
